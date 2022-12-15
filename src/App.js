@@ -10,8 +10,8 @@ function App() {
   const [welcome, setWelcome] = useState(true);
   const AI = new PlayerAI(config);
 
-  const [width, setWidth] = useState(7);
-  const [height, setHeight] = useState(6);
+  const width= 7;
+  const height=6;
   const [gameState, setGameState] = useState(newGameState(width, height));
 
   useEffect(() => {
