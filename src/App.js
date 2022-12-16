@@ -179,8 +179,9 @@ function App() {
       )}
       {!welcome && (
         <div className="slide-in">
+          
           <div className="config">
-            <h2>Configuration</h2>
+            
 
             <fieldset className="field">
               <legend>Play Aginst</legend>
@@ -210,7 +211,7 @@ function App() {
             </fieldset>
             {gameState.aiAction && (
               <>
-                <h3>Choose difficulty</h3>
+                
 
                 <fieldset className="field">
                   <legend>Difficulty</legend>
@@ -224,7 +225,7 @@ function App() {
                       checked={config.maxDepth === 2}
                       onChange={changeConfig}
                     />
-                    <label htmlFor="easy">Easy (Your winning chance 80%)</label>
+                    <label htmlFor="easy">Easy</label>
                   </div>
 
                   <div className="field-option">
@@ -237,7 +238,7 @@ function App() {
                       onChange={changeConfig}
                     />
                     <label htmlFor="medium">
-                      Medium (Your winning Chance 40%)
+                      Medium 
                     </label>
                   </div>
 
@@ -250,10 +251,10 @@ function App() {
                       checked={config.maxDepth === 6}
                       onChange={changeConfig}
                     />
-                    <label htmlFor="hard">Hard (Your winning Chance 1%)</label>
+                    <label htmlFor="hard">Hard </label>
                   </div>
                 </fieldset>
-                <h3>Choose Your Play order</h3>
+                
 
                 <fieldset className="field">
                   <legend>Play order</legend>
@@ -281,6 +282,7 @@ function App() {
                     <label htmlFor="second">Computer first</label>
                   </div>
                 </fieldset>
+                <div>
                 <div className="config-p">
                   <p>You are:</p>
                   <div
@@ -298,6 +300,8 @@ function App() {
                     }`}
                   ></div>
                 </div>
+                </div>
+                
               </>
             )}
           </div>
