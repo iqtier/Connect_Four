@@ -293,7 +293,7 @@ class PlayerAI {
     }
 
     if (timeElapsed > this.config.timeLimit) {
-      throw "Maximum time limit reached";
+      throw new Error("Maximum time limit reached");
     } //time limit exception
 
     if (max) {
