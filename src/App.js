@@ -26,7 +26,7 @@ function App() {
         setWelcome(false);
       }, 7500);
     }
-  }, [gameState]);
+  }, [gameState, AI, handlePlayerClick, welcome]);
 
   function newGameState(width, height) {
     return {
